@@ -125,7 +125,7 @@ if "step" not in st.session_state:
 with tab1:
     # 1) 시작 화면
     if st.session_state.step == "start":
-        st.subheader("📌사전 예약 시 추가 토론방 생성권 무료 지급!")
+        st.subheader("📌사전 예약 시 5회 추가 토론방 생성권 무료 지급!")
 
         if st.button("받으러 가기", use_container_width=True):
             append_log({
@@ -185,3 +185,4 @@ with tab2:
 
         st.metric("총 기록 수", len(df))
         st.dataframe(df, use_container_width=True)
+
