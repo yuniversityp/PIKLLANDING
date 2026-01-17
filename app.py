@@ -35,7 +35,8 @@ st.set_page_config(
     layout="centered",
 )
 
-st.title("✨PIKL 사전 예약 이벤트✨")
+st.title("""✨PIKL 
+사전 예약 이벤트✨""")
 st.write("""
         건강한 토론장이 되는 사회 공유 서비스
         """)
@@ -187,5 +188,6 @@ with tab2:
 
         st.metric("총 기록 수", len(df))
         st.dataframe(df, use_container_width=True)
+
 
 
