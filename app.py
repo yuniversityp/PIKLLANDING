@@ -141,7 +141,9 @@ with tab1:
     # 2) 구글폼 열기 화면
     elif st.session_state.step == "open_form":
         st.subheader("📄 설문 참여 안내")
-        st.success("아래 버튼을 눌러 설문을 진행해주세요. (새 탭으로 열립니다)")
+        st.success("""아래 버튼을 눌러 설문을 진행해주세요.
+        구글폼이 열리지 않을 경우 페이지 링크를 복사해서 들어가주세요! 
+        https://forms.gle/43bhQMmmKLGZjswH9""")
 
         # 구글폼 열기 클릭도 로그 남기고 싶다면: link_button을 버튼+로그로 분리
         # (link_button 자체는 클릭 이벤트를 파이썬으로 받기 어려워서 아래처럼 구성)
@@ -185,4 +187,5 @@ with tab2:
 
         st.metric("총 기록 수", len(df))
         st.dataframe(df, use_container_width=True)
+
 
