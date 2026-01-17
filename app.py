@@ -49,7 +49,7 @@ st.markdown(
 """
 )
 
-
+st.divider()
 
 imgs = [f"PIKL_{i}.png" for i in range(1, 5)]
 
@@ -190,6 +190,7 @@ with tab2:
 
         st.metric("총 기록 수", len(df))
         st.dataframe(df, use_container_width=True)
+
 
 
 
